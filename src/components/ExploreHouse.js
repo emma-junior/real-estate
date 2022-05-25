@@ -7,22 +7,24 @@ const ExploreHouse = ({house}) => {
     const [currentImage, setCurrentImage] = useState(0);
   return (
     <div className="mt-10">
-      <h2 className="lg:ml-28 ml-5 mb-8 font-bold text-2xl">{houseInfo.address}</h2>
+      <h2 className="lg:ml-28 ml-5 mb-8 font-bold text-2xl">
+        {houseInfo.address}
+      </h2>
       <div className="lg:w-10/12 w-11/12 mx-auto lg:flex">
         <div className="lg:mr-5">
           <img
             className="lg:w-[860px] w-[500px] h-[280px] lg:h-[605px]"
-            src={images[currentImage]}
+            src={require(`../images/${images[currentImage]}`)}
             alt="pic"
           />
         </div>
-        <div className='lg:block flex lg:-mt-2 mt-2'>
+        <div className="lg:block flex lg:-mt-2 mt-2">
           {currentImage === 0 ? (
             <div className="mb-3 border-solid border-4 border-indigo-600 m-[8px] rounded-lg">
               <img
                 className="lg:w-[200px] w-[100px] h-[60px] lg:h-[140px] cursor-pointer "
                 onClick={() => setCurrentImage(0)}
-                src={images[0]}
+                src={require(`../images/${images[0]}`)}
                 alt="imageOne"
               />
             </div>
@@ -31,7 +33,7 @@ const ExploreHouse = ({house}) => {
               <img
                 className="lg:w-[200px] w-[100px] h-[60px] lg:h-[140px] cursor-pointer "
                 onClick={() => setCurrentImage(0)}
-                src={images[0]}
+                src={require(`../images/${images[0]}`)}
                 alt="imageOne"
               />
             </div>
@@ -42,7 +44,7 @@ const ExploreHouse = ({house}) => {
               <img
                 className="lg:w-[200px] w-[100px] h-[60px] lg:h-[140px] cursor-pointer "
                 onClick={() => setCurrentImage(1)}
-                src={images[1]}
+                src={require(`../images/${images[1]}`)}
                 alt="imageOne"
               />
             </div>
@@ -51,7 +53,7 @@ const ExploreHouse = ({house}) => {
               <img
                 className="lg:w-[200px] w-[100px] h-[60px] lg:h-[140px] cursor-pointer "
                 onClick={() => setCurrentImage(1)}
-                src={images[1]}
+                src={require(`../images/${images[1]}`)}
                 alt="imageOne"
               />
             </div>
@@ -62,7 +64,7 @@ const ExploreHouse = ({house}) => {
               <img
                 className="lg:w-[200px] lg:h-[140px] w-[100px] h-[60px] cursor-pointer "
                 onClick={() => setCurrentImage(2)}
-                src={images[2]}
+                src={require(`../images/${images[2]}`)}
                 alt="imageOne"
               />
             </div>
@@ -71,7 +73,7 @@ const ExploreHouse = ({house}) => {
               <img
                 className="lg:w-[200px] lg:h-[140px] w-[100px] h-[60px] cursor-pointer "
                 onClick={() => setCurrentImage(2)}
-                src={images[2]}
+                src={require(`../images/${images[2]}`)}
                 alt="imageOne"
               />
             </div>
@@ -81,7 +83,7 @@ const ExploreHouse = ({house}) => {
               <img
                 className="lg:w-[200px] lg:h-[140px] w-[100px] h-[60px] cursor-pointer "
                 onClick={() => setCurrentImage(3)}
-                src={images[3]}
+                src={require(`../images/${images[3]}`)}
                 alt="imageOne"
               />
             </div>
@@ -90,7 +92,7 @@ const ExploreHouse = ({house}) => {
               <img
                 className="lg:w-[200px] lg:h-[140px] w-[100px] h-[60px] cursor-pointer "
                 onClick={() => setCurrentImage(3)}
-                src={images[3]}
+                src={require(`../images/${images[3]}`)}
                 alt="imageOne"
               />
             </div>

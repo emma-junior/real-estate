@@ -1,7 +1,7 @@
 const csvtojson = require("csvtojson");
 const fs = require("fs");
 
-const csvfilepath = "mercuryImages.csv";
+const csvfilepath = "mercuryInformations.csv";
 
 csvtojson()
   .fromFile(csvfilepath)

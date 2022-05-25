@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
-import explore from '../output.json'
-import { motion } from 'framer-motion';
+import explore from "../output.json";
+import { motion } from "framer-motion";
+// import image from "../images/image_1a.webp";
 
 const HomeCards = () => {
-    const exploreHouse = explore.slice(0, 6)
+  const exploreHouse = explore.slice(0, 6);
   return (
     <div className="mt-12">
       <h2 className="text-3xl px-1 mb-12 font-bold text-center">
@@ -20,7 +21,11 @@ const HomeCards = () => {
                 className="cursor-pointer"
                 key={exploreItem.id}
               >
-                <img className="lg:w-80 w-72 h-64" src={exploreItem.imageOne} alt="" />
+                <img
+                  className="lg:w-80 w-72 h-64"
+                  src={require(`../images/${exploreItem.imageOne}`)}
+                  alt=""
+                />
                 <div className="shadow-lg shadow-black-500/50 lg:w-80 w-72 h-32 relative">
                   <div className="py-7 px-3">
                     <h2 className="font-bold">$ {exploreItem.price}</h2>
@@ -35,6 +40,6 @@ const HomeCards = () => {
       </div>
     </div>
   );
-}
+};
 
-export default HomeCards
+export default HomeCards;

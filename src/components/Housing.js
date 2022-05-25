@@ -24,7 +24,7 @@ const Housing = () => {
               >
                 <img
                   className="lg:w-80 w-72 h-64"
-                  src={exploreItem.imageOne}
+                  src={require(`../images/${exploreItem.imageOne}`)}
                   alt=""
                 />
                 <div className="shadow-lg shadow-black-500/50 lg:w-80 w-72 h-32 relative">
