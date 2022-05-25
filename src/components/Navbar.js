@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import {FaCaretDown} from 'react-icons/fa'
 import {FaBars} from 'react-icons/fa'
 import {FaTimes} from 'react-icons/fa'
 import { Link } from "react-router-dom";
