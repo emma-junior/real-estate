@@ -15,11 +15,13 @@ const HomeCards = () => {
       <div className="mt-16 grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-3 w-[80%] mx-auto">
         {exploreHouse.map((exploreItem) => {
           return (
-            <Link to={`/house-details/${exploreItem.slug}`}>
+            <Link
+              to={`/house-details/${exploreItem.slug}`}
+              key={exploreItem.id}
+            >
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 className="cursor-pointer"
-                key={exploreItem.id}
               >
                 <img
                   className="lg:w-80 w-72 h-64"

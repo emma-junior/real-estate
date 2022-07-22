@@ -10,7 +10,7 @@ const HouseDetails = () => {
     // console.log(explore);
 
     const house = explore.find((item) => item.slug === slug)
-    // console.log(house)
+    console.log(house)
 
   return (
     <div>
