@@ -12,9 +12,9 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route exact path="houses" element={<Houses />} />
-          <Route exact path="house-details/:slug" element={<HouseDetails />} />
-          <Route exact path="contact-us" element={<ContactUs />} />
+          <Route path="houses" element={<Houses />} />
+          <Route path="house-details/:slug" element={<HouseDetails />} />
+          <Route path="contact-us" element={<ContactUs />} />
         </Routes>
       </Router>
     </div>
