@@ -11,7 +11,7 @@ const Home = () => {
         <h2 className="lg:text-5xl text-2xl font-bold text-[#222] lg:w-3/5 w-4/5 lg:pl-10 pl-5 lg:pt-16 pt-24">
           Your No.1 plug for all your housing needs anywhere in Nigeria
         </h2>
-        <div className="h-1.5 my-7 bg-indigo-700 w-32 ml-10"></div>
+        <div className="h-1.5 my-7 bg-indigo-700 w-32 lg:ml-10 ml-5"></div>
       </div>
       <div className="bg-[#111] py-10 text-white text-center">
         <h2 className="text-3xl text-indigo-700 mb-8">Mercury Homes</h2>
