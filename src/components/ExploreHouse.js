@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import ActiveImage from './ActiveImage';
 
 const ExploreHouse = ({house}) => {
     const houseInfo  = house;
@@ -19,84 +20,10 @@ const ExploreHouse = ({house}) => {
           />
         </div>
         <div className="lg:block flex lg:-mt-2 mt-2">
-          {currentImage === 0 ? (
-            <div className="mb-3 border-solid border-4 border-indigo-600 m-[8px] rounded-lg">
-              <img
-                className="lg:w-[200px] w-[100px] h-[60px] lg:h-[140px] cursor-pointer "
-                onClick={() => setCurrentImage(0)}
-                src={require(`../images/${images[0]}`)}
-                alt="imageOne"
-              />
-            </div>
-          ) : (
-            <div className="mb-3 m-[8px]">
-              <img
-                className="lg:w-[200px] w-[100px] h-[60px] lg:h-[140px] cursor-pointer "
-                onClick={() => setCurrentImage(0)}
-                src={require(`../images/${images[0]}`)}
-                alt="imageOne"
-              />
-            </div>
-          )}
-
-          {currentImage === 1 ? (
-            <div className="mb-3 border-solid border-4 border-indigo-600 m-[8px] rounded-lg">
-              <img
-                className="lg:w-[200px] w-[100px] h-[60px] lg:h-[140px] cursor-pointer "
-                onClick={() => setCurrentImage(1)}
-                src={require(`../images/${images[1]}`)}
-                alt="imageOne"
-              />
-            </div>
-          ) : (
-            <div className="mb-3 m-[8px]">
-              <img
-                className="lg:w-[200px] w-[100px] h-[60px] lg:h-[140px] cursor-pointer "
-                onClick={() => setCurrentImage(1)}
-                src={require(`../images/${images[1]}`)}
-                alt="imageOne"
-              />
-            </div>
-          )}
-
-          {currentImage === 2 ? (
-            <div className="mb-3 border-solid border-4 border-indigo-600 m-[8px] rounded-lg">
-              <img
-                className="lg:w-[200px] lg:h-[140px] w-[100px] h-[60px] cursor-pointer "
-                onClick={() => setCurrentImage(2)}
-                src={require(`../images/${images[2]}`)}
-                alt="imageOne"
-              />
-            </div>
-          ) : (
-            <div className="mb-3 m-[8px]">
-              <img
-                className="lg:w-[200px] lg:h-[140px] w-[100px] h-[60px] cursor-pointer "
-                onClick={() => setCurrentImage(2)}
-                src={require(`../images/${images[2]}`)}
-                alt="imageOne"
-              />
-            </div>
-          )}
-          {currentImage === 3 ? (
-            <div className="mb-3 border-solid border-4 border-indigo-600 m-[8px] rounded-lg">
-              <img
-                className="lg:w-[200px] lg:h-[140px] w-[100px] h-[60px] cursor-pointer "
-                onClick={() => setCurrentImage(3)}
-                src={require(`../images/${images[3]}`)}
-                alt="imageOne"
-              />
-            </div>
-          ) : (
-            <div className="mb-3 m-[5px]">
-              <img
-                className="lg:w-[200px] lg:h-[140px] w-[100px] h-[60px] cursor-pointer "
-                onClick={() => setCurrentImage(3)}
-                src={require(`../images/${images[3]}`)}
-                alt="imageOne"
-              />
-            </div>
-          )}
+          <ActiveImage currentImage={currentImage} setCurrentImage={setCurrentImage} images={images} num={0}   />
+          <ActiveImage currentImage={currentImage} setCurrentImage={setCurrentImage} images={images} num={1}   />
+          <ActiveImage currentImage={currentImage} setCurrentImage={setCurrentImage} images={images} num={2}   />
+          <ActiveImage currentImage={currentImage} setCurrentImage={setCurrentImage} images={images} num={3}   />
         </div>
       </div>
       <div className="mt-16 lg:w-3/5 w-10/12 mx-auto">
