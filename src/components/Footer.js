@@ -5,9 +5,9 @@ import {FaTwitter} from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <div className="bg-[#111] lg:flex mt-10 py-12 lg:px-28 px-5">
+    <div className="bg-[#603276] lg:flex mt-10 py-20 lg:px-28 px-5">
       <div className=" text-white pr-8 mb-5 lg:mb-[4px]">
-        <h2 className='text-indigo-700 text-3xl font-bold mb-5'>MERCURY HOMES</h2>
+        <h2 className='text-white text-3xl font-bold mb-5'>MERCURY HOMES</h2>
         <h2 className='text-3xl mb-5'>About Mercury</h2>
         <p>
           We are daily driven to keeping our promise of delivering the best
@@ -26,15 +26,15 @@ const Footer = () => {
       <div className='text-white mt-5 flex lg:block'>
         <div className='flex mb-5 mr-4 cursor-pointer'>
           <p className='mr-2 lg:text-2xl'>Facebook</p>
-          <p className='mt-1 lg:text-3xl text-indigo-700'><FaFacebook /></p>
+          <p className='mt-1 lg:text-3xl '><FaFacebook /></p>
         </div>
         <div className='flex mb-5 mr-4 cursor-pointer'>
           <p className='mr-2 lg:text-2xl'>Instagram</p>
-          <p className='mt-1 lg:text-3xl text-indigo-700 '><FaInstagram /></p>
+          <p className='mt-1 lg:text-3xl '><FaInstagram /></p>
         </div>
         <div className='flex mb-5 mr-4 cursor-pointer'>
           <p className='mr-2 lg:text-2xl'>Twitter</p>
-          <p className='mt-1 lg:text-3xl text-indigo-700'><FaTwitter /></p>
+          <p className='mt-1 lg:text-3xl'><FaTwitter /></p>
         </div>
       </div>
     </div>

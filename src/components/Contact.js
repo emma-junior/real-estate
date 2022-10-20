@@ -62,7 +62,7 @@ const Contact = () => {
             <label className=" font-bold">Message:</label>
             <textarea className="w-full h-20 rounded-md border-solid border-[#666] border-2 px-2" />
           </div>
-          <button className="bg-indigo-700 text-white py-2 px-4 rounded-lg hover:bg-indigo-500 float-right">
+          <button className="bg-[#603276] text-white py-2 px-4 rounded-lg hover:bg-[#9650b6] float-right">
             Submit
           </button>
         </div>

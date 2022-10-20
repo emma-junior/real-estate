@@ -1,7 +1,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'cover-pic': "url('/public/assets/mercury-pic.jpg')",
+      }
+    },
   },
   plugins: [],
 };
