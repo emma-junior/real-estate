@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 import { BsTelephone } from "react-icons/bs";
-import { HiOutlineMail } from "react-icons/hi"
-import {AiFillFacebook} from "react-icons/ai"
-import { AiFillInstagram} from "react-icons/ai"
-import {FaTwitterSquare} from "react-icons/fa"
+import { HiOutlineMail } from "react-icons/hi";
+import { AiFillFacebook } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaTwitterSquare } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="mt-12 flex lg:ml-48 ">
-      <div className="bg-[url(https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)] w-4/12 bg-cover text-white ">
+    <div className="pt-12 flex w-full justify-center ">
+      <div className="bg-contact-img w-4/12 bg-cover text-white ">
         <div className="overlay px-10 pt-10 pb-28">
           <div>
             <h2 className="font-bold">Contact Information</h2>
@@ -69,6 +69,6 @@ const Contact = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Contact
+export default Contact;

@@ -1,24 +1,18 @@
-import React from 'react'
-import { useParams } from 'react-router-dom';
-import ExploreHouse from '../components/ExploreHouse';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import React from "react";
+import { useParams } from "react-router-dom";
+import ExploreHouse from "../components/ExploreHouse";
 import explore from "../output.json";
 
 const HouseDetails = () => {
-  const {slug} = useParams()
-    // console.log(explore);
+  const { slug } = useParams();
 
-    const house = explore.find((item) => item.slug === slug)
-    console.log(house)
+  const house = explore.find((item) => item.slug === slug);
 
   return (
     <div>
-        <Navbar />
-        <ExploreHouse house={house} />
-        <Footer />
+      <ExploreHouse house={house} />
     </div>
   );
-}
+};
 
-export default HouseDetails
+export default HouseDetails;

@@ -1,16 +1,12 @@
-import React from 'react'
-import Footer from '../components/Footer'
-import Housing from '../components/Housing'
-import Navbar from '../components/Navbar'
+import React from "react";
+import Housing from "../components/Housing";
 
 const Houses = () => {
   return (
-    <div className='F5F5F5'>
-        <Navbar />
-        <Housing />
-        <Footer />
+    <div className="F5F5F5">
+      <Housing />
     </div>
-  )
-}
+  );
+};
 
-export default Houses
+export default Houses;
