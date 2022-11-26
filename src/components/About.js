@@ -1,6 +1,4 @@
 import React from "react";
-import aboutImg from "../asset/aboutpg.jpg";
-import placeholderImg from "../asset/about-placeholder.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
@@ -20,8 +18,8 @@ const About = () => {
       </div>
       <LazyLoadImage
         className="w-11/12 h-[60vh] mx-auto object-cover "
-        src={aboutImg}
-        placeholderSrc={placeholderImg}
+        src="/assets/aboutpg.jpg"
+        placeholderSrc="/assets/about-placeholder.jpg"
         effect="blur"
         alt=""
       />
