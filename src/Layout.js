@@ -3,10 +3,10 @@ import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
-const Layout = () => {
+const Layout = ({ dropdown, setDropdown }) => {
   return (
     <div>
-      <Navbar />
+      <Navbar dropdown={dropdown} setDropdown={setDropdown} />
       <Outlet />
       <Footer />
     </div>

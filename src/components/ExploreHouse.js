@@ -12,7 +12,6 @@ const ExploreHouse = ({ house }) => {
     houseInfo.imageFour,
   ];
   const [currentImage, setCurrentImage] = useState(0);
-  console.log(houseInfo.latitude, houseInfo.longitude);
   return (
     <div className="mt-10">
       <h2 className="lg:ml-28 ml-5 mb-8 font-bold text-2xl">

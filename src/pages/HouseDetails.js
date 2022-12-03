@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ExploreHouse from "../components/ExploreHouse";
 import explore from "../output.json";
 
-const HouseDetails = () => {
+const HouseDetails = ({ dropdown, setDropdown }) => {
+  useEffect(() => {
+    setDropdown(!dropdown);
+  }, []);
   const { slug } = useParams();
 
   const house = explore.find((item) => item.slug === slug);

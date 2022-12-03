@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
-  const [dropdown, setDropdown] = useState(false);
+const Navbar = ({ dropdown, setDropdown }) => {
   return (
     <section className="bg-[#603276] py-5 lg:px-16 px-4 text-white">
       <div className="flex justify-between w-full">

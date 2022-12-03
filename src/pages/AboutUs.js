@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import About from "../components/About";
 
-const AboutUs = () => {
+const AboutUs = ({ dropdown, setDropdown }) => {
+  useEffect(() => {
+    setDropdown(!dropdown);
+  }, []);
   return (
     <div>
       <About />

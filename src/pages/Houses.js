@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Housing from "../components/Housing";
 
-const Houses = () => {
+const Houses = ({ dropdown, setDropdown }) => {
+  useEffect(() => {
+    setDropdown(!dropdown);
+  }, []);
   return (
     <div className="F5F5F5">
       <Housing />
