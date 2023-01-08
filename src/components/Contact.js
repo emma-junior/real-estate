@@ -7,8 +7,8 @@ import { FaTwitterSquare } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="pt-12 flex w-full justify-center ">
-      <div className="bg-contact-img w-4/12 bg-cover text-white ">
+    <div className="pt-12 lg:flex w-full mx-auto justify-center ">
+      <div className="bg-contact-img w-11/12 lg:w-4/12 bg-cover text-white ">
         <div className="overlay px-10 pt-10 pb-28">
           <div>
             <h2 className="font-bold">Contact Information</h2>
@@ -43,8 +43,8 @@ const Contact = () => {
         </div>
       </div>
       {/* Contact */}
-      <div className="w-6/12 bg-white shadow-lg shadow-black-500/50 py-5">
-        <div className="px-12">
+      <div className="w-11/12 lg:w-6/12 bg-white shadow-lg shadow-black-500/50 py-5">
+        <div className="lg:px-12 px-8">
           <h2 className="text-xl font-bold">Send us a message</h2>
           <div className="my-5 ">
             <label className=" font-bold">First name:</label>

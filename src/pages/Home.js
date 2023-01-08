@@ -1,11 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import HomeCards from "../components/HomeCards";
 
-const Home = ({ dropdown, setDropdown }) => {
-  useEffect(() => {
-    setDropdown(!dropdown);
-  }, []);
-
+const Home = () => {
   return (
     <>
       <section className="bg-cover-pic bg-cover bg-no-repeat bg-center bg-[#ccc] h-screen">

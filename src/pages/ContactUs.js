@@ -1,14 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Contact from "../components/Contact";
 
-const ContactUs = ({ dropdown, setDropdown }) => {
-  useEffect(() => {
-    setDropdown(!dropdown);
-  }, []);
+const ContactUs = () => {
   return (
-    <div className="bg-[#F3F4F6] h-full">
-      <Contact />
-    </div>
+    <section className="bg-[#F3F4F6] h-full">
+      <div className="mx-auto">
+        <Contact />
+      </div>
+    </section>
   );
 };
 

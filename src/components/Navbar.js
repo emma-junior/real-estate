@@ -14,24 +14,13 @@ const Navbar = ({ dropdown, setDropdown }) => {
         </NavLink>
 
         {/* For Mobile View */}
-        {dropdown === false && (
-          <h2
-            className=" text-2xl lg:hidden "
-            onClick={() => setDropdown(true)}
-          >
-            <FaBars />
-          </h2>
-        )}
-        {dropdown === true && (
-          <div>
-            <h2
-              className=" text-2xl lg:hidden"
-              onClick={() => setDropdown(false)}
-            >
-              <FaTimes />
-            </h2>
-          </div>
-        )}
+
+        <h2
+          className=" text-2xl lg:hidden "
+          onClick={() => setDropdown(!dropdown)}
+        >
+          {!dropdown ? <FaBars /> : <FaTimes />}
+        </h2>
 
         {/* For Laptop View */}
         <ul className="hidden lg:flex space-x-5 animate__animated animate__slideInRight">
@@ -78,6 +67,7 @@ const Navbar = ({ dropdown, setDropdown }) => {
             className={({ isActive }) =>
               isActive ? "text-white" : "text-slate-200 cursor-pointer"
             }
+            onClick={() => setDropdown(!dropdown)}
           >
             <li className="cursor-pointer mt-4">Houses</li>
           </NavLink>
@@ -89,6 +79,7 @@ const Navbar = ({ dropdown, setDropdown }) => {
             className={({ isActive }) =>
               isActive ? "text-white" : "text-slate-200 cursor-pointer"
             }
+            onClick={() => setDropdown(!dropdown)}
           >
             <li className="cursor-pointer mt-4">Contact Us</li>
           </NavLink>
@@ -97,6 +88,7 @@ const Navbar = ({ dropdown, setDropdown }) => {
             className={({ isActive }) =>
               isActive ? "text-white" : "text-slate-200 cursor-pointer"
             }
+            onClick={() => setDropdown(!dropdown)}
           >
             <li className="cursor-pointer mt-4">About Us</li>
           </NavLink>
