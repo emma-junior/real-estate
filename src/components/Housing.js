@@ -19,7 +19,7 @@ const Housing = () => {
   };
 
   return (
-    <div className="mt-12">
+    <div className="my-12">
       <h2 className="text-4xl mb-12 font-bold text-center">
         Available properties
       </h2>

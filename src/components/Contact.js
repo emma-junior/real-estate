@@ -7,11 +7,11 @@ import { FaTwitterSquare } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="pt-12 lg:flex w-full mx-auto justify-center ">
-      <div className="bg-contact-img w-11/12 lg:w-4/12 bg-cover text-white ">
+    <div className="py-12 lg:flex mx-auto w-11/12 justify-center ">
+      <div className="bg-contact-img lg:w-4/12 bg-cover text-white ">
         <div className="overlay px-10 pt-10 pb-28">
           <div>
-            <h2 className="font-bold">Contact Information</h2>
+            <h2 className="font-bold text-xl">Contact Information</h2>
             <p className="py-8">
               Contact us to get the best deals on your housing needs at an
               affordable price anywhere in nigeria
@@ -43,7 +43,7 @@ const Contact = () => {
         </div>
       </div>
       {/* Contact */}
-      <div className="w-11/12 lg:w-6/12 bg-white shadow-lg shadow-black-500/50 py-5">
+      <div className=" lg:w-6/12 bg-white shadow-lg shadow-black-500/50 py-5">
         <div className="lg:px-12 px-8">
           <h2 className="text-xl font-bold">Send us a message</h2>
           <div className="my-5 ">
@@ -62,9 +62,11 @@ const Contact = () => {
             <label className=" font-bold">Message:</label>
             <textarea className="w-full h-20 rounded-md border-solid border-[#666] border-2 px-2" />
           </div>
-          <button className="bg-[#603276] text-white py-2 px-4 rounded-lg hover:bg-[#9650b6] float-right">
-            Submit
-          </button>
+          <div className="flex justify-end">
+            <button className="bg-[#603276] text-white py-2 px-4 rounded-lg hover:bg-[#9650b6] ">
+              Submit
+            </button>
+          </div>
         </div>
       </div>
     </div>

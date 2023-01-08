@@ -5,7 +5,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const About = () => {
   return (
     <>
-      <h2 className="text-[40px] lg:text-[50px] w-10/12 lg:w-3/5 text-center mx-auto font-medium mt-5">
+      <h2 className="text-[40px] lg:text-[50px] w-10/12 lg:w-3/5 text-center mx-auto font-medium ">
         We're changing the whole real estate game
       </h2>
       <div className="my-4 space-x-3 flex w-full justify-center">

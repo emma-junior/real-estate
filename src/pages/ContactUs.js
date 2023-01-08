@@ -3,8 +3,8 @@ import Contact from "../components/Contact";
 
 const ContactUs = () => {
   return (
-    <section className="bg-[#F3F4F6] h-full">
-      <div className="mx-auto">
+    <section className="bg-[#F3F4F6] h-full flex w-full justify-center">
+      <div className="">
         <Contact />
       </div>
     </section>
