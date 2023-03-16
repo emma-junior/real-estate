@@ -17,7 +17,7 @@ const ExploreHouse = ({ house }) => {
       <h2 className="lg:ml-28 ml-5 mb-8 font-bold text-2xl">
         {houseInfo.address}
       </h2>
-      <div className="lg:w-10/12 w-11/12 mx-auto lg:flex">
+      <div className="lg:w-10/12 w-11/12 mx-auto md:flex justify-center">
         <div className="lg:mr-5">
           <img
             className="lg:w-[860px] w-[500px] h-[280px] lg:h-[605px]"
@@ -25,7 +25,7 @@ const ExploreHouse = ({ house }) => {
             alt="pic"
           />
         </div>
-        <div className="lg:block flex lg:-mt-2 mt-2">
+        <div className="md:block flex md:-mt-2 mt-2">
           <ActiveImage
             currentImage={currentImage}
             setCurrentImage={setCurrentImage}

@@ -24,7 +24,7 @@ const Housing = () => {
         Available properties
       </h2>
       <div className="h-1.5 my-7 bg-[#603276] w-32 mx-auto"></div>
-      <div className="my-16 lg:grid grid-cols-3 flex flex-col justify-center lg:space-y-0 space-y-3 gap-6 lg:w-[80%] w-[300px] mx-auto ">
+      <div className="my-16 md:grid md:grid-cols-2 lg:grid-cols-3 flex flex-col justify-center lg:space-y-0 space-y-3 gap-6 md:w-[80%] w-[300px] mx-auto ">
         {initialPosts.map((exploreItem) => (
           <Card key={exploreItem.id} exploreItem={exploreItem} />
         ))}
