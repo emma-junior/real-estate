@@ -61,7 +61,7 @@ const ExploreHouse = ({ house }) => {
         <h2 className="text-[#603276] text-[25px] font-medium lg:w-3/5 w-10/12 mx-auto mt-10 mb-4">
           Location on Map
         </h2>
-        <div>
+        <div className="mt-5 mb-12">
           <MapContainer
             center={[houseInfo.latitude, houseInfo.longitude]}
             zoom={13}
